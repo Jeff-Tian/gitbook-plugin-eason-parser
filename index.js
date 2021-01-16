@@ -1,4 +1,4 @@
-import {SchemeParser} from './eason-parser.cjs.production.min'
+const { SchemeParser } = require('./eason-parser.cjs.production.min')
 
 module.exports = {
   // Map of hooks

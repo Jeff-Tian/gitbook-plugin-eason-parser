@@ -8,7 +8,7 @@ module.exports = {
   blocks: {
     eason: {
       process: function(block) {
-        const define = new SchemeParser.buildSyntaxTree(`(define (A x y)
+        const define = new SchemeParser().buildSyntaxTree(`(define (A x y)
 (cond ((= y 0) 0)
       ((= x 0) (* 2 y))
       ((= y 1) 2)
@@ -18,9 +18,9 @@ module.exports = {
         define.define()
         define.defineExplain()
 
-        return '<pre>' + [
-          new SchemeParser().buildSyntaxTree(block.body)
-              .expandToEnd()].join('\n') + '</pre>'
+        return '<pre>' +
+            new SchemeParser().buildSyntaxTree(block.body)
+                .expandToEnd().join('\n') + '</pre>'
       },
     },
   },

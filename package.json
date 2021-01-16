@@ -1,10 +1,10 @@
 {
   "name": "gitbook-plugin-eason-parser",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "An eason parser plugin for gitbook",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
         "description": "It defines my awesome config!"
       }
     }
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
 }

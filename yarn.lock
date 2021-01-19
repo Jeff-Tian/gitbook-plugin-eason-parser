@@ -1148,10 +1148,10 @@ domexception@^2.0.1:
   dependencies:
     webidl-conversions "^5.0.0"
 
-eason-parser@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/eason-parser/-/eason-parser-0.1.2.tgz#cdcaa123054f4b451f29dd5914b5e364ef957962"
-  integrity sha512-9dafaiOJeDt7LBj4iBEyvj6y/vbKih8kNq2ngBuDV+an408J8tRoBRV/kpR5HUwgIATV6brLpzOPHbOVlUuh+A==
+eason-parser@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/eason-parser/-/eason-parser-0.1.3.tgz#61288435158a719822cd3737da4e501cc65d19bd"
+  integrity sha512-mRAsuEP6f394+TFbBY4mmscYaLfZze7XisBbGNI9mDzvhmHJQHZPZO0HBpF4l3lfAhKfDL2jxSM1a5Bdp9Jj+Q==
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"

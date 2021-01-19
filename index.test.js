@@ -3,7 +3,7 @@ const plugin = require('./index')
 describe('expand', () => {
   it('expands', () => {
     const res = plugin.blocks.eason.process({
-      body: "(A 1 10)"
+      body: '(A 1 10)',
     })
 
     expect(res).toStrictEqual(`<pre>(A (- 1 1) (A 1 (- 10 1)))
@@ -45,8 +45,13 @@ describe('expand', () => {
 1024</pre>`)
   })
 
-  it("expands (A 0 n) as (* 2 n)", ()=>{
-    const res = plugin.blocks.eason.process({body: "(A 0 n)"})
-    expect(res).toStrictEqual("<pre>(* 2 n)</pre>")
+  it('expands (A 0 n) as (* 2 n)', () => {
+    const res = plugin.blocks.eason.process({ body: '(A 0 n)' })
+    expect(res).toStrictEqual('<pre>(* 2 n)</pre>')
+  })
+
+  it('expands (A 1 n) as (A (-1 1) (A 1 (- n 1)))', () => {
+    const res = plugin.blocks.eason.process({ body: '(A 1 n)' })
+    expect(res).toStrictEqual('<pre>(A (- 1 1) (A 1 (- n 1)))</pre>')
   })
 })

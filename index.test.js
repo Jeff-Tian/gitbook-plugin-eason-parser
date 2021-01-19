@@ -44,4 +44,9 @@ describe('expand', () => {
 (* 2 512)
 1024</pre>`)
   })
+
+  it("expands (A 0 n) as (* 2 n)", ()=>{
+    const res = plugin.blocks.eason.process({body: "(A 0 n)"})
+    expect(res).toStrictEqual("<pre>(* 2 n)</pre>")
+  })
 })

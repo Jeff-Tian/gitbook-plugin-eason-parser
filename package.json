@@ -30,5 +30,8 @@
   },
   "devDependencies": {
     "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "eason-parser": "^0.1.2"
   }
 }
